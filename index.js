@@ -14,4 +14,21 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.listen(port, ()=> console.log('Bond Fight API listening...'))
+app.get('/Bond_Films', function (req, res) {
+    Client.connect(function (err) {
+        let db = Client.db(dbname)
+        console.log(db)
+        getAllFilms(db, function (documents) {
+            res.json(documents)
+        })
+    })
+})
+
+const getAllFilms = function (db, callback) {
+    var collection = db.collection('Bond_Films')
+    collection.find().toArray(function (err, documents) {
+        callback(documents)
+    })
+}
+
+app.listen(port, ()=> console.log('The name\'s Bond..... James Bond.'))
