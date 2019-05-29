@@ -17,7 +17,6 @@ app.use(function(req, res, next) {
 app.get('/Bond_Films', function (req, res) {
     Client.connect(function (err) {
         let db = Client.db(dbname)
-        console.log(db)
         getAllFilms(db, function (documents) {
             res.json(documents)
         })
