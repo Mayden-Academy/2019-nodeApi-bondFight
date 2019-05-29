@@ -1,0 +1,19 @@
+{
+  "name": "2019-nodeapi-bondfight",
+  "version": "1.0.0",
+  "description": "Backend API for comparing bond films app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayden-Academy/2019-nodeApi-bondFight.git"
+  },
+  "author": "pengrats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayden-Academy/2019-nodeApi-bondFight/issues"
+  },
+  "homepage": "https://github.com/Mayden-Academy/2019-nodeApi-bondFight#readme"
+}
