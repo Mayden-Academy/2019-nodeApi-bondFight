@@ -31,5 +31,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Thanks go to creators of the Skyfall Done font.
 Also Alice. Cheers Alice.
-
-
