@@ -56,8 +56,6 @@ app.put('/bondFilms/', jsonParser, function (req, res) {
     })
 })
 
-app.listen(port, ()=> console.log('bond database running'))
-
 // enable CORS Cross Origin Request, API that accepts http requests outside its domain. Makes the API public.
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
