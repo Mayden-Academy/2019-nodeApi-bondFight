@@ -87,7 +87,6 @@ app.put('/bondFilms/', jsonParser, function (req, res) {
                 data: []
             })
         }
-
     })
 })
 
@@ -99,7 +98,6 @@ app.post('/Bond_Films', function (req, res) {
     }
     res.json(result)
 })
-
 
 app.delete('/Bond_Films', function (req, res) {
     let result = {
