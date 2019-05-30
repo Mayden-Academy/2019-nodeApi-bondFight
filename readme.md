@@ -13,7 +13,7 @@
 /Bond_Films
 GET
 
-- Gets all films from database to hydrate card components within card container. 
+- Gets all films from database and returns an array of objects. 
 - Returns:
 - if GET request is successful
 {'success':true, 'msg':'', 'data':[{id: int, name: string, image: string, release_date: string}]
