@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Mayden-Academy/2019-nodeApi-bondFight/issues"
   },
-  "homepage": "https://github.com/Mayden-Academy/2019-nodeApi-bondFight#readme"
+  "homepage": "https://github.com/Mayden-Academy/2019-nodeApi-bondFight#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.2.6"
+  }
 }
