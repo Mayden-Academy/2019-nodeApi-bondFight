@@ -15,6 +15,26 @@ There are two repositories; one back and one front end. Follow these instruction
 5. Turn on mongodb by running `mongod --config /usr/local/etc/mongod.conf`
 6. In your browser, navigate to localhost:3000 to see Bond Fight.
 
+# Bond Fight - Node
+
+### Setup
+
+1. Clone Node repository by running `git clone git@github.com:Mayden-Academy/2019-nodeApi-bondFight.git`
+2. Create MongoDb database with name Films and collection Bond_Films, and populate with `bond.json` from db folder
+3. Turn on mongodb by running `mongod --config /usr/local/etc/mongod.conf`
+4. On the command line, cd into node directory and run `node index.js`
+
+
+### Routes
+
+/Bond_Films
+GET
+
+- Gets all films from database and returns an array of objects. 
+- Returns:
+- if GET request is successful
+{'success':true, 'msg':'', 'data':[{id: int, name: string, image: string, release_date: string}]
+
 
 ### Authors
 
