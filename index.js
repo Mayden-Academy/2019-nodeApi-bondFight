@@ -35,6 +35,25 @@ app.get('/Bond_Films', function (req, res) {
     })
 })
 
+app.post('/Bond_Films', function (req, res) {
+    let result = {
+        success: false,
+        msg: 'endpoint does not exist',
+        data: []
+    }
+    res.json(result)
+})
+
+
+app.delete('/Bond_Films', function (req, res) {
+    let result = {
+        success: false,
+        msg: 'endpoint does not exist',
+        data: []
+    }
+    res.json(result)
+})
+
 const getAllFilms = function (db, callback) {
     var collection = db.collection('Bond_Films')
     collection.find().toArray(function (err, documents) {
