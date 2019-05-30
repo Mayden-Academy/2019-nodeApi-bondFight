@@ -17,9 +17,21 @@ app.use(function(req, res, next) {
 app.get('/Bond_Films', function (req, res) {
     Client.connect(function (err) {
         let db = Client.db(dbname)
-        getAllFilms(db, function (documents) {
-            res.json(documents)
+        let response = {
+            success: false,
+            message: '',
+            data: ''
+        }
+        try {
+            getAllFilms(db, function (documents) {
+            response.success = true
+            response.data = documents
+            res.json(response)
         })
+        } catch (error){
+            response.message = error
+            res.json(response)
+        }
     })
 })
 
